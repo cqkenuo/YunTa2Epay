@@ -423,9 +423,9 @@ function Epay_ProcessOrder($config, $order){
 	}
 	$title = '云塔IDC财务管理系统';
 
-	$new_alipay_config['pid'] = trim($alipay_config['pid']);
-	$new_alipay_config['notify_url'] = $http . $_SERVER['HTTP_HOST'] . "/payment/pay_notify.php?yunta_gateway=nepay";
-	$new_alipay_config['return_url'] = $http . $_SERVER['HTTP_HOST'] . "/payment/pay_return.php?yunta_gateway=nepay";
+	$new_alipay_config['pid'] = trim($alipay_config['pid']);E
+	$new_alipay_config['notify_url'] = $http . $_SERVER['HTTP_HOST'] . "/payment/pay_notify.php?yunta_gateway=Epay";
+	$new_alipay_config['return_url'] = $http . $_SERVER['HTTP_HOST'] . "/payment/pay_return.php?yunta_gateway=Epay";
 	$new_alipay_config['out_trade_no'] = $order['orderid'];
 	$new_alipay_config['type'] = $config['type'];
 	$new_alipay_config['name'] = $title . '充值 #' . $order['orderid'];
